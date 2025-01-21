@@ -51,7 +51,7 @@
 
 // //3
 // const nName = "Uliana";
-// console.log(nName.charAt(0)); //
+// console.log(nName.charAt(0)); // виводить індех який ти вкажеш в дужках
 
 // //4
 // const mName = "Uliana Boiko";
@@ -64,7 +64,7 @@
 
 // //6
 // const strtext = "JavaScript";
-// console.log(strtext.substring(0, 4));
+// console.log(strtext.substring(0, 4)); виводить символи індекса від 0 до 4
 
 // //2.1
 // const customerName = "Уляна";
