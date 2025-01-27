@@ -93,23 +93,41 @@
 // }
 
 // //2.3
-const sub = "free";
-if (sub === "pro" || sub === "vip") {
-  console.log("Доступ дозволено");
-} else {
-  console.log("Доступ заборонено");
-}
+// const sub = "free";
+// if (sub === "pro" || sub === "vip") {
+//   console.log("Доступ дозволено");
+// } else {
+//   console.log("Доступ заборонено");
+// }
 
 //2.4
-let balance = Number(prompt("Який у вас баланс?"));
-const payment = Number(prompt("Сума покупки"));
-alert(`Загальна вартість замовлення ${payment} кредитів. Перевіряємо кількість 
-доступних коштів на рахунку
-`);
-if (payment <= balance) {
-  balance = balance - payment;
-  alert(`На рахунку залишилося ${balance} кредитів`);
+// let balance = Number(prompt("Який у вас баланс?"));
+// const payment = Number(prompt("Сума покупки"));
+// alert(`Загальна вартість замовлення ${payment} кредитів. Перевіряємо кількість
+// доступних коштів на рахунку
+// `);
+// if (payment <= balance) {
+//   balance = balance - payment;
+//   alert(`На рахунку залишилося ${balance} кредитів`);
+// } else {
+//   alert("На рахунку недостатньо коштів для проведення операції!");
+// }
+// alert("Операція завершена");
+
+//3
+const totalSpent = Number(prompt("Введіть загальну суму витрачених коштів"));
+const payment = Number(prompt("Введіть суму поточного платежу"));
+let discount;
+if (totalSpent >= 100 && totalSpent < 1000) {
+  discount = 2;
+  alert("Бронзовий партнер, знижка 2%");
+} else if (totalSpent >= 1000 && totalSpent < 5000) {
+  discount = 5;
+  alert("Срібний партнер, знижка 5%");
+} else if (totalSpent > 5000) {
+  discount = 10;
+  alert("Золотий партнер, знижка 10%");
 } else {
-  alert("На рахунку недостатньо коштів для проведення операції!");
+  alert("У вас ще немає партнерської знижки");
 }
-alert("Операція завершена");
+alert(`Оформляемо замовлення на суму ${payment} зі знижкою ${discount}%`);
