@@ -1,18 +1,22 @@
 "use strict";
 
+//Дщгічні оператори if else
+
 // console.log(2 && 0 && 5); //&& - and, виводить false, приводить зліва на право перше значення false
 // console.log(0 || 4); // ||- або приводить перше true
 // console.log(!5); //! - не і !!- нен не треба
 // console.log(!10);
 
-// let number = Я;
+// let number = 6;
 // if (number) {
 //   console.log("перший блок коду");
 // } else if (numder === 0) {
 //   console.log("Други йкод коду");
 // } else if (number > 19) {
-// console.log('Число більше 10')
-// } else {pjcm4w4rey}
+//   console.log("Число більше 10");
+// } else {
+//   pjcm4w4rey;
+// }
 
 // const userAge = prompt("Вкажіть свій вік"); //  якщо скасує буде null якщо ок то нічого і якщо веде то буде значення
 
@@ -115,19 +119,19 @@
 // alert("Операція завершена");
 
 //3
-const totalSpent = Number(prompt("Введіть загальну суму витрачених коштів"));
-const payment = Number(prompt("Введіть суму поточного платежу"));
-let discount;
-if (totalSpent >= 100 && totalSpent < 1000) {
-  discount = 2;
-  alert("Бронзовий партнер, знижка 2%");
-} else if (totalSpent >= 1000 && totalSpent < 5000) {
-  discount = 5;
-  alert("Срібний партнер, знижка 5%");
-} else if (totalSpent > 5000) {
-  discount = 10;
-  alert("Золотий партнер, знижка 10%");
-} else {
-  alert("У вас ще немає партнерської знижки");
-}
-alert(`Оформляемо замовлення на суму ${payment} зі знижкою ${discount}%`);
+// const totalSpent = Number(prompt("Введіть загальну суму витрачених коштів"));
+// const payment = Number(prompt("Введіть суму поточного платежу"));
+// let discount;
+// if (totalSpent >= 100 && totalSpent < 1000) {
+//   discount = 2;
+//   alert("Бронзовий партнер, знижка 2%");
+// } else if (totalSpent >= 1000 && totalSpent < 5000) {
+//   discount = 5;
+//   alert("Срібний партнер, знижка 5%");
+// } else if (totalSpent > 5000) {
+//   discount = 10;
+//   alert("Золотий партнер, знижка 10%");
+// } else {
+//   alert("У вас ще немає партнерської знижки");
+// }
+// alert(`Оформляемо замовлення на суму ${payment} зі знижкою ${discount}%`);
