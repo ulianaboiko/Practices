@@ -134,5 +134,3 @@
 // console.log(sumOfOddNumber);
 
 //додаткове
-const askNumber = prompt("Введіть число:");
-let totalSum;
