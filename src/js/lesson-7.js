@@ -111,23 +111,23 @@
 // }
 // console.log(totals);
 
-//8
-const logins = ["whyauquamarine", "JoiZu", "mollystutu", "kruisher"];
-const targetLogin = "JoiZu";
-// let found = false;
+// //8
+// const logins = ["whyauquamarine", "JoiZu", "mollystutu", "kruisher"];
+// const targetLogin = "JoiZu";
+// // let found = false;
 
-// for (let i = 0; i < logins.length; i++) {
-//   if (logins[i] === targetLogin) {
-//     console.log(`Користувач ${targetLogin} знайдено`);
-//     found = true;
-//     break;
-//   }
-// }
-// if (!found) {
-//   console.log(`Користувач ${targetLogin} не знайдено`);
-// }
+// // for (let i = 0; i < logins.length; i++) {
+// //   if (logins[i] === targetLogin) {
+// //     console.log(`Користувач ${targetLogin} знайдено`);
+// //     found = true;
+// //     break;
+// //   }
+// // }
+// // if (!found) {
+// //   console.log(`Користувач ${targetLogin} не знайдено`);
+// // }
 
-const message = logins.includes(targetLogin)
-  ? `Користувач ${targetLogin} знайдено`
-  : `Користувач ${targetLogin} не знайдено`;
-console.log(message);
+// const message = logins.includes(targetLogin)
+//   ? `Користувач ${targetLogin} знайдено`
+//   : `Користувач ${targetLogin} не знайдено`;
+// console.log(message);
