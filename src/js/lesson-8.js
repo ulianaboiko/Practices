@@ -54,76 +54,76 @@
 
 //Практика
 //Завдання 1
-const numbers = [12, 23, 11, 34, 22];
-numbers.push(11);
-console.log(numbers);
+// const numbers = [12, 23, 11, 34, 22];
+// numbers.push(11);
+// console.log(numbers);
 
-//2
-const strings = ["hello", "I'm", "Uliana"];
-strings.pop();
-console.log(strings);
+// //2
+// const strings = ["hello", "I'm", "Uliana"];
+// strings.pop();
+// console.log(strings);
 
-//3
-const numberes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const five = numberes.slice(0, 5);
-console.log(five);
+// //3
+// const numberes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const five = numberes.slice(0, 5);
+// console.log(five);
 
-//4
-const fiveNumbers = [1, 45, 3, 22, 7];
-console.log(fiveNumbers.indexOf(3));
+// //4
+// const fiveNumbers = [1, 45, 3, 22, 7];
+// console.log(fiveNumbers.indexOf(3));
 
-//5
-const animals = ["tiger", "monkey", "dog", "lion", "pigeon"];
-const alltogether = animals.join(",");
-console.log(alltogether);
+// //5
+// const animals = ["tiger", "monkey", "dog", "lion", "pigeon"];
+// const alltogether = animals.join(",");
+// console.log(alltogether);
 
-//6
-const title = "Top 10 benefits of React framework";
-// const result = title.toLocaleLowerCase().split(" ").join("-");
-const titleToLower = title.toLowerCase();
-const arrTitle = titleToLower.split(" ");
-const result = arrTitle.join("-");
-console.log(result);
+// //6
+// const title = "Top 10 benefits of React framework";
+// // const result = title.toLocaleLowerCase().split(" ").join("-");
+// const titleToLower = title.toLowerCase();
+// const arrTitle = titleToLower.split(" ");
+// const result = arrTitle.join("-");
+// console.log(result);
 
-//7
-const array1 = [5, 10, 15, 20];
-const array2 = [10, 20, 30];
+// //7
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
 
-const firstArryL = array1.length;
-const seconndArrL = array2.length;
-const sum = firstArryL + seconndArrL;
-console.log(sum);
-//or
-const summ = array1.concat(array2);
-console.log(summ.length);
+// const firstArryL = array1.length;
+// const seconndArrL = array2.length;
+// const sum = firstArryL + seconndArrL;
+// console.log(sum);
+// //or
+// const summ = array1.concat(array2);
+// console.log(summ.length);
 
-//8
-const message = "Welcome to Ukraine!";
-const messageArr = message.split("");
-console.log(messageArr);
-console.log(messageArr.indexOf("l"));
-const messageArrToStr = messageArr.join("");
-console.log(messageArrToStr);
+// //8
+// const message = "Welcome to Ukraine!";
+// const messageArr = message.split("");
+// console.log(messageArr);
+// console.log(messageArr.indexOf("l"));
+// const messageArrToStr = messageArr.join("");
+// console.log(messageArrToStr);
 
-//9
-const players = ["monesy", "donk", "simpe"];
-for (let i = 0; i < players.length; i++) {
-  players[i] = `${players[i]} = ${i + 1}`;
-}
-console.log(players);
-// let counter = 1;
-// let newG = [];
-// for (let play of players){
-//     newG.push(`${play} = ${counter}`)
-//     counter +=1;
+// //9
+// const players = ["monesy", "donk", "simpe"];
+// for (let i = 0; i < players.length; i++) {
+//   players[i] = `${players[i]} = ${i + 1}`;
 // }
-// console.log(newG);
+// console.log(players);
+// // let counter = 1;
+// // let newG = [];
+// // for (let play of players){
+// //     newG.push(`${play} = ${counter}`)
+// //     counter +=1;
+// // }
+// // console.log(newG);
 
-//10
-const styles = ["Джаз", "Блюз"];
-styles.push("Рок-н-ролл");
-console.log(styles);
-styles.splice(1, 1, "Класика");
-styles.shift();
-styles.unshift("Реп", "Реггі");
-console.log(styles);
+// //10
+// const styles = ["Джаз", "Блюз"];
+// styles.push("Рок-н-ролл");
+// console.log(styles);
+// styles.splice(1, 1, "Класика");
+// styles.shift();
+// styles.unshift("Реп", "Реггі");
+// console.log(styles);
