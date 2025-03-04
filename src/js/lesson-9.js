@@ -76,63 +76,63 @@
 
 // console.log(summ(1, 2, 5, 4, 4, 4, 788));
 
-//Практичні завдання
-//1
-const hello1 = function () {
-  return "привіт javascript";
-};
-console.log(hello1());
+// //Практичні завдання
+// //1
+// const hello1 = function () {
+//   return "привіт javascript";
+// };
+// console.log(hello1());
 
-//2
-const hello2 = function (name) {
-  return `Привіт ${name}`;
-};
-console.log(hello2("Василь"));
+// //2
+// const hello2 = function (name) {
+//   return `Привіт ${name}`;
+// };
+// console.log(hello2("Василь"));
 
-//3
-const mull = function (n, m) {
-  const sum = n + m;
-  const devide = n - m;
-  const multiply = n * m;
-  return [sum, devide, multiply];
-};
-console.log(mull(10, 2));
+// //3
+// const mull = function (n, m) {
+//   const sum = n + m;
+//   const devide = n - m;
+//   const multiply = n * m;
+//   return [sum, devide, multiply];
+// };
+// console.log(mull(10, 2));
 
-//4
-const myAverageScore = function (marks) {
-  let sum = 0;
-  for (let mark of marks) {
-    sum += mark;
-  }
-  const average = sum / marks.length;
-  if (average <= 100 && average >= 91) {
-    return "Myaveragescore : A";
-  }
+// //4
+// const myAverageScore = function (marks) {
+//   let sum = 0;
+//   for (let mark of marks) {
+//     sum += mark;
+//   }
+//   const average = sum / marks.length;
+//   if (average <= 100 && average >= 91) {
+//     return "Myaveragescore : A";
+//   }
 
-  if (average <= 90 && average >= 81) {
-    return "Myaveragescore : B";
-  }
+//   if (average <= 90 && average >= 81) {
+//     return "Myaveragescore : B";
+//   }
 
-  if (average <= 80 && average >= 71) {
-    return "Myaveragescore : C";
-  }
+//   if (average <= 80 && average >= 71) {
+//     return "Myaveragescore : C";
+//   }
 
-  if (average <= 70) {
-    return "Myaveragescore : D";
-  }
+//   if (average <= 70) {
+//     return "Myaveragescore : D";
+//   }
 
-  return "Invalid marks";
-};
-console.log(myAverageScore([100, 75, 81, 96]));
+//   return "Invalid marks";
+// };
+// console.log(myAverageScore([100, 75, 81, 96]));
 
-//5
-const findAverage = function (numbers) {
-  let summ = 0;
-  for (let number of numbers) {
-    summ += number;
-  }
-  return summ / numbers.length;
-};
-console.log(findAverage([100, 12, 12, 3, 43, 43]));
+// //5
+// const findAverage = function (numbers) {
+//   let summ = 0;
+//   for (let number of numbers) {
+//     summ += number;
+//   }
+//   return summ / numbers.length;
+// };
+// console.log(findAverage([100, 12, 12, 3, 43, 43]));
 
-//
+// //
