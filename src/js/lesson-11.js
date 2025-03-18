@@ -97,134 +97,134 @@
 // person.run();
 
 //практичні завдання
-//1
-const person = {
-  age: 15,
-  name: "Vika",
-  gender: "female",
-  showInformation() {
-    console.log(
-      `Людина з ім'ям ${this.name}, віком ${this.age}, стать-${this.gender}`
-    );
-  },
-};
-person.showInformation();
+// //1
+// const person = {
+//   age: 15,
+//   name: "Vika",
+//   gender: "female",
+//   showInformation() {
+//     console.log(
+//       `Людина з ім'ям ${this.name}, віком ${this.age}, стать-${this.gender}`
+//     );
+//   },
+// };
+// person.showInformation();
 
-//2
-const car = {
-  brand: "Mercedes",
-  model: "Mercedes-Benz",
-  year: 2018,
-  color: "silver",
-  showData() {
-    console.log(
-      `Це автомобіль бренду ${this.brand} моделі ${this.model}, ${this.year} року і ${this.color} кольору`
-    );
-  },
-};
-car.showData();
+// //2
+// const car = {
+//   brand: "Mercedes",
+//   model: "Mercedes-Benz",
+//   year: 2018,
+//   color: "silver",
+//   showData() {
+//     console.log(
+//       `Це автомобіль бренду ${this.brand} моделі ${this.model}, ${this.year} року і ${this.color} кольору`
+//     );
+//   },
+// };
+// car.showData();
 
-//3
-const movie = {
-  title: "Avatar",
-  director: "James Cameron",
-  year: 2009,
-  genre: "fantasy",
-  showCinemaInfo() {
-    console.log(
-      `Назва фільму-${this.title} режисер-${this.director} рік-${this.year} жанр${this.genre}`
-    );
-  },
-};
-movie.showCinemaInfo();
+// //3
+// const movie = {
+//   title: "Avatar",
+//   director: "James Cameron",
+//   year: 2009,
+//   genre: "fantasy",
+//   showCinemaInfo() {
+//     console.log(
+//       `Назва фільму-${this.title} режисер-${this.director} рік-${this.year} жанр${this.genre}`
+//     );
+//   },
+// };
+// movie.showCinemaInfo();
 
-//4
-const laptop = {
-  brand: "Apple",
-  model: "MacBook Pro",
-  processor: "M2",
-  ram: "8gb",
-  getLaptopInfo() {
-    return `laptop ${this.brand} ${this.model} with processor ${this.processor} and ${this.ram}`;
-  },
-};
+// //4
+// const laptop = {
+//   brand: "Apple",
+//   model: "MacBook Pro",
+//   processor: "M2",
+//   ram: "8gb",
+//   getLaptopInfo() {
+//     return `laptop ${this.brand} ${this.model} with processor ${this.processor} and ${this.ram}`;
+//   },
+// };
 
-console.log(laptop.getLaptopInfo());
-// alert(laptop.getLaptopInfo());
+// console.log(laptop.getLaptopInfo());
+// // alert(laptop.getLaptopInfo());
 
-//5
-const house = {
-  adress: "Shevchenka 09-10",
-  floors: 10,
-  color: "beige",
-  yearBuilt: 2006,
-  getAdress() {
-    return this.adress;
-  },
-};
-house.color = "gray";
-console.log(house.getAdress());
-console.log(house);
+// //5
+// const house = {
+//   adress: "Shevchenka 09-10",
+//   floors: 10,
+//   color: "beige",
+//   yearBuilt: 2006,
+//   getAdress() {
+//     return this.adress;
+//   },
+// };
+// house.color = "gray";
+// console.log(house.getAdress());
+// console.log(house);
 
-//6 did it(emo)
-const book = {
-  title: "shatter me",
-  author: "T. Mafi",
-  year: 2011,
-  genre: "antuutopia",
-  updateProps(key, newValue) {
-    this[key] = newValue;
-  },
-};
-book.updateProps("year", 2023);
-console.log(book);
+// //6 did it(emo)
+// const book = {
+//   title: "shatter me",
+//   author: "T. Mafi",
+//   year: 2011,
+//   genre: "antuutopia",
+//   updateProps(key, newValue) {
+//     this[key] = newValue;
+//   },
+// };
+// book.updateProps("year", 2023);
+// console.log(book);
 
-//7
-const restaurant = {
-  name: "Rosemary",
-  cuisine: "tratitional",
-  address: "Street 35",
-  rating: 5,
-  changeAddress(newAddress) {
-    this.address = newAddress;
-  },
-  changeRating(newRating) {
-    if ((newRating) => 0 && newRating <= 5) {
-      this.rating = newRating;
-    }
-  },
-};
-restaurant.changeAddress("Street 22");
-restaurant.changeRating(0);
-console.log(restaurant);
+// //7
+// const restaurant = {
+//   name: "Rosemary",
+//   cuisine: "tratitional",
+//   address: "Street 35",
+//   rating: 5,
+//   changeAddress(newAddress) {
+//     this.address = newAddress;
+//   },
+//   changeRating(newRating) {
+//     if ((newRating) => 0 && newRating <= 5) {
+//       this.rating = newRating;
+//     }
+//   },
+// };
+// restaurant.changeAddress("Street 22");
+// restaurant.changeRating(0);
+// console.log(restaurant);
 
-//8
-const students = [
-  {
-    name: "Uliana",
-    age: 16,
-    gender: "female",
-    grade: 1092,
-  },
-  {
-    name: "Artem",
-    age: 16,
-    gender: "female",
-    grade: 1039,
-  },
-  {
-    name: "Ivan",
-    age: 11,
-    gender: "male",
-    grade: 752,
-  },
-];
+// //8
+// const students = [
+//   {
+//     name: "Uliana",
+//     age: 16,
+//     gender: "female",
+//     grade: 1092,
+//   },
+//   {
+//     name: "Artem",
+//     age: 16,
+//     gender: "male",
+//     grade: 1039,
+//   },
+//   {
+//     name: "Ivan",
+//     age: 11,
+//     gender: "male",
+//     grade: 752,
+//   },
+// ];
 
-const getAverageGrade = (students) => {
-  let sum = 0;
-  for (const student of students) {
-    sum += student.grade;
-  }
-  return sum / students.length;
-};
-console.log(getAverageGrade(students));
+// const getAverageGrade = (students) => {
+//   let sum = 0;
+//   for (const student of students) {
+//     sum += student.grade;
+//   }
+//   return sum / students.length;
+// };
+// console.log(getAverageGrade(students));
