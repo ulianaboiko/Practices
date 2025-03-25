@@ -81,94 +81,94 @@
 
 // console.log(hotel.hasOwnProperty("pool")); //перевіряє чи є така властивість
 
-//Практичні завдання
-//1
-const person = {
-  name: "Alice",
-  age: 30,
-  city: "Kyiv",
-  country: "Ukraine",
-  job: "Developer",
-  experience: 5,
-  skills: ["JavaScript", "React", "Node.js"],
-  isEmployed: true,
-  salary: 3000,
-  languages: { english: "B2", ukrainian: "native" },
-  hobby: "Photography",
-};
-const countProperties = (obj) => {
-  return Object.values(obj).length;
-};
-console.log(countProperties(person));
-// const toCalculatearray = () => {
-//   const personValues = Object.values(person);
-//   const arrayLength = personValues.length;
-//   return arrayLength;
+// //Практичні завдання
+// //1
+// const person = {
+//   name: "Alice",
+//   age: 30,
+//   city: "Kyiv",
+//   country: "Ukraine",
+//   job: "Developer",
+//   experience: 5,
+//   skills: ["JavaScript", "React", "Node.js"],
+//   isEmployed: true,
+//   salary: 3000,
+//   languages: { english: "B2", ukrainian: "native" },
+//   hobby: "Photography",
 // };
-// console.log(toCalculatearray());
+// const countProperties = (obj) => {
+//   return Object.values(obj).length;
+// };
+// console.log(countProperties(person));
+// // const toCalculatearray = () => {
+// //   const personValues = Object.values(person);
+// //   const arrayLength = personValues.length;
+// //   return arrayLength;
+// // };
+// // console.log(toCalculatearray());
 
-//2
-const friends = [
-  { name: "Mango", online: false },
-  { name: "Kiwi", online: true },
-  { name: "Poly", online: false },
-  { name: "Ajax", online: false },
-];
-const findFriendByName = (friends, friendName) => {
-  for (const friend of friends) {
-    if (friend.name === friendName) {
-      return friend;
-    }
-  }
-  return null;
-};
-console.log(findFriendByName(friends, "Poly"));
-console.log(findFriendByName(friends, "Chelsy"));
+// //2
+// const friends = [
+//   { name: "Mango", online: false },
+//   { name: "Kiwi", online: true },
+//   { name: "Poly", online: false },
+//   { name: "Ajax", online: false },
+// ];
+// const findFriendByName = (friends, friendName) => {
+//   for (const friend of friends) {
+//     if (friend.name === friendName) {
+//       return friend;
+//     }
+//   }
+//   return null;
+// };
+// console.log(findFriendByName(friends, "Poly"));
+// console.log(findFriendByName(friends, "Chelsy"));
 
-//3
-const getAllNames = (friends) => {
-  const friendsNames = [];
-  for (const friend of friends) {
-    friendsNames.push(friend.name);
-  }
-  return friendsNames;
-};
-console.log(getAllNames(friends));
+// //3
+// const getAllNames = (friends) => {
+//   const friendsNames = [];
+//   for (const friend of friends) {
+//     friendsNames.push(friend.name);
+//   }
+//   return friendsNames;
+// };
+// console.log(getAllNames(friends));
 
-//4
-const getOnlineFriends = (friends) => {
-  const onlineFriend = [];
-  for (const friend of friends) {
-    if (friend.online) {
-      onlineFriend.push(friend.name);
-    }
-  }
-  return onlineFriend;
-};
-console.log(getOnlineFriends(friends));
+// //4
+// const getOnlineFriends = (friends) => {
+//   const onlineFriend = [];
+//   for (const friend of friends) {
+//     if (friend.online) {
+//       onlineFriend.push(friend.name);
+//     }
+//   }
+//   return onlineFriend;
+// };
+// console.log(getOnlineFriends(friends));
 
-//5
-const getFriendsByStatus = function (friends) {
-  const friendByStat = {
-    onlineFriends: [],
-    offlineFriends: [],
-  };
-  for (const friend of friends) {
-    if (friend.online) {
-      friendByStat.onlineFriends.push(friend.name);
-    } else {
-      friendByStat.offlineFriends.push(friend.name);
-    }
-  }
-  return friendByStat;
-};
+// //5
+// const getFriendsByStatus = function (friends) {
+//   const friendByStat = {
+//     onlineFriends: [],
+//     offlineFriends: [],
+//   };
+//   for (const friend of friends) {
+//     if (friend.online) {
+//       friendByStat.onlineFriends.push(friend.name);
+//     } else {
+//       friendByStat.offlineFriends.push(friend.name);
+//     }
+//   }
+//   return friendByStat;
+// };
 
-console.log(getFriendsByStatus(friends));
+// console.log(getFriendsByStatus(friends));
 
-//2.5
-const movies = [
-  { title: "S", director: "G", year: "2008", genre: "romance" },
-  { title: "S", director: "G", year: "2008", genre: "horror" },
-  { title: "S", director: "G", year: "2008", genre: "romance" },
-  { title: "S", director: "G", year: "2008", genre: "epic" },
-];
+// //2.5
+// const movies = [
+//   { title: "S", director: "G", year: "2008", genre: "romance" },
+//   { title: "S", director: "G", year: "2008", genre: "horror" },
+//   { title: "S", director: "G", year: "2008", genre: "romance" },
+//   { title: "S", director: "G", year: "2008", genre: "epic" },
+// ];
