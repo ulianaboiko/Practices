@@ -106,137 +106,137 @@
 // console.log(camera);
 // console.log(stability_control);
 
-//3
-const movie = {
-  title: "The Shawshank Redemption",
-  director: {
-    name: "Frank Darabont",
-    nationality: "American",
-  },
-  actors: ["Tim Robbins", "Morgan Freeman"],
-  release_year: 1994,
-  ratings: {
-    imdb: 9.3,
-    rotten_tomatoes: 90,
-  },
-};
+// //3
+// const movie = {
+//   title: "The Shawshank Redemption",
+//   director: {
+//     name: "Frank Darabont",
+//     nationality: "American",
+//   },
+//   actors: ["Tim Robbins", "Morgan Freeman"],
+//   release_year: 1994,
+//   ratings: {
+//     imdb: 9.3,
+//     rotten_tomatoes: 90,
+//   },
+// };
 
-const {
-  title,
-  director: { name, nationality },
-  actors: [firstActor, secondActor],
-  release_year,
-  ratings: { imdb, rotten_tomatoes },
-} = movie;
+// const {
+//   title,
+//   director: { name, nationality },
+//   actors: [firstActor, secondActor],
+//   release_year,
+//   ratings: { imdb, rotten_tomatoes },
+// } = movie;
 
-console.log(title);
-console.log(name);
-console.log(nationality);
-console.log(firstActor);
-console.log(secondActor);
-console.log(release_year);
-console.log(imdb);
-console.log(rotten_tomatoes);
+// console.log(title);
+// console.log(name);
+// console.log(nationality);
+// console.log(firstActor);
+// console.log(secondActor);
+// console.log(release_year);
+// console.log(imdb);
+// console.log(rotten_tomatoes);
 
-//4
-const address = {
-  street: "Main St",
-  city: "New York",
-  country: "USA",
-};
+// //4
+// const address = {
+//   street: "Main St",
+//   city: "New York",
+//   country: "USA",
+// };
 
-//5
-const data = {
-  users: [
-    { name: "John", age: 25 },
-    { name: "Jane", age: 17 },
-    { name: "Bob", age: 30 },
-  ],
-};
+// //5
+// const data = {
+//   users: [
+//     { name: "John", age: 25 },
+//     { name: "Jane", age: 17 },
+//     { name: "Bob", age: 30 },
+//   ],
+// };
 
-const getUsername = ({ users }) => {
-  const userName = [];
-  for (const { name } of users) {
-    userName.push(name);
-  }
-  return userName;
-};
-console.log(getUsername(data));
+// const getUsername = ({ users }) => {
+//   const userName = [];
+//   for (const { name } of users) {
+//     userName.push(name);
+//   }
+//   return userName;
+// };
+// console.log(getUsername(data));
 
-//6
-const courses = {
-  total: 3,
-  list: [
-    { title: "JavaScript Basics", hours: 10 },
-    { title: "React Advanced", hours: 20 },
-    { title: "Node.js Fundamentals", hours: 15 },
-  ],
-};
+// //6
+// const courses = {
+//   total: 3,
+//   list: [
+//     { title: "JavaScript Basics", hours: 10 },
+//     { title: "React Advanced", hours: 20 },
+//     { title: "Node.js Fundamentals", hours: 15 },
+//   ],
+// };
 
-const countHours = ({ list }) => {
-  let totalHours = 0;
-  for (const { hours } of list) {
-    totalHours += hours;
-  }
-  return totalHours;
-};
-console.log(countHours(courses));
+// const countHours = ({ list }) => {
+//   let totalHours = 0;
+//   for (const { hours } of list) {
+//     totalHours += hours;
+//   }
+//   return totalHours;
+// };
+// console.log(countHours(courses));
 
-//7
-const userProfile = {
-  name: "John Doe",
-  address: {
-    street: "123 Main St",
-    city: "Los Angeles",
-    country: "USA",
-  },
-};
+// //7
+// const userProfile = {
+//   name: "John Doe",
+//   address: {
+//     street: "123 Main St",
+//     city: "Los Angeles",
+//     country: "USA",
+//   },
+// };
 
-const userProfile2 = {
-  name: "John Doe",
-  address: {
-    street: "123 Main St",
-    country: "USA",
-  },
-};
+// const userProfile2 = {
+//   name: "John Doe",
+//   address: {
+//     street: "123 Main St",
+//     country: "USA",
+//   },
+// };
 
-const getAddress = ({
-  address: { city = "Невідоме місто", country = "Невідома країна" },
-}) => {
-  return { city, country };
-};
-console.log(getAddress(userProfile));
-console.log(getAddress(userProfile2));
+// const getAddress = ({
+//   address: { city = "Невідоме місто", country = "Невідома країна" },
+// }) => {
+//   return { city, country };
+// };
+// console.log(getAddress(userProfile));
+// console.log(getAddress(userProfile2));
 
-//8
-const person = {
-  name: "Nelli",
-  surname: "Laroy",
-  age: 25,
-};
+// //8
+// const person = {
+//   name: "Nelli",
+//   surname: "Laroy",
+//   age: 25,
+// };
 
-const personInfo = ({ name, surname, age }) => {
-  return `My name is ${name} ${surname}, I am ${age}`;
-};
+// const personInfo = ({ name, surname, age }) => {
+//   return `My name is ${name} ${surname}, I am ${age}`;
+// };
 
-console.log(personInfo(person));
+// console.log(personInfo(person));
 
-//9
-const student = {
-  name: "Bruce",
-  surname: "Lee",
-  grades: [4, 5, 3],
-};
+// //9
+// const student = {
+//   name: "Bruce",
+//   surname: "Lee",
+//   grades: [4, 5, 3],
+// };
 
-const calculateAverageGrade = ({ grades }) => {
-  let totalSum = 0;
-  for (const grade of grades) {
-    totalSum += grade;
-  }
-  return totalSum / grades.length;
-};
+// const calculateAverageGrade = ({ grades }) => {
+//   let totalSum = 0;
+//   for (const grade of grades) {
+//     totalSum += grade;
+//   }
+//   return totalSum / grades.length;
+// };
 
-console.log(calculateAverageGrade(student));
+// console.log(calculateAverageGrade(student));
 
 //additional
 
@@ -259,3 +259,16 @@ console.log(calculateAverageGrade(student));
 // };
 
 // console.log(getAdultUsers(data));
+
+const array2 = [
+  "apple",
+  "banana",
+  "orange",
+  "banana",
+  "grape",
+  "apple",
+  "kiwi",
+];
+const getLetters = (arr) => {
+  return array2.map();
+};
