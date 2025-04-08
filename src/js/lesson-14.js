@@ -77,52 +77,52 @@
 // const isUserActive = users.some((user) => user.isActive);
 // console.log(isAllUsersActive);
 
-//Практичні завдання
-const players = [
-  { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
-  { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
-  { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
-  { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
-  { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
-];
+// //Практичні завдання
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+// ];
 
-//1
-// const playerName = players.map((player) => player.name);
-const playerName = players.map(({ name }) => name);
-console.log(playerName);
+// //1
+// // const playerName = players.map((player) => player.name);
+// const playerName = players.map(({ name }) => name);
+// console.log(playerName);
 
-//2
+// //2
 
-const updatePlayerPoints = players.map((player) => {
-  return { ...player, points: Math.round(player.points * 1.1) };
-});
-console.log(updatePlayerPoints);
+// const updatePlayerPoints = players.map((player) => {
+//   return { ...player, points: Math.round(player.points * 1.1) };
+// });
+// console.log(updatePlayerPoints);
 
-//3
-const changeTimePlayedById = (players, playerId, additionalTime) => {
-  const result = players.map((player) =>
-    player.id === playerId
-      ? { ...player, timePlayed: (player.timePlayed += additionalTime) }
-      : player
-  );
-  return result;
-};
-console.log(changeTimePlayedById(players, "player-5", 40));
+// //3
+// const changeTimePlayedById = (players, playerId, additionalTime) => {
+//   const result = players.map((player) =>
+//     player.id === playerId
+//       ? { ...player, timePlayed: (player.timePlayed += additionalTime) }
+//       : player
+//   );
+//   return result;
+// };
+// console.log(changeTimePlayedById(players, "player-5", 40));
 
-//4
-const playerOnline = players.filter(({ online }) => online);
-console.log(playerOnline);
+// //4
+// const playerOnline = players.filter(({ online }) => online);
+// console.log(playerOnline);
 
-//5
-const playerOffline = players.filter(({ online }) => !online);
-console.log(playerOffline);
+// //5
+// const playerOffline = players.filter(({ online }) => !online);
+// console.log(playerOffline);
 
-//6
-const hardUsers = players.filter(({ timePlayed }) => timePlayed > 250);
-console.log(hardUsers);
+// //6
+// const hardUsers = players.filter(({ timePlayed }) => timePlayed > 250);
+// console.log(hardUsers);
 
-//7
-const findPlayerById = (players, playerId) => {
-  return players.find(({ id }) => id === playerId);
-};
-console.log(findPlayerById(players, "player-3"));
+// //7
+// const findPlayerById = (players, playerId) => {
+//   return players.find(({ id }) => id === playerId);
+// };
+// console.log(findPlayerById(players, "player-3"));
