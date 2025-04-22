@@ -44,41 +44,41 @@
 
 //Класи клас - це шаблон для обєктів
 
-class User {
-  #password;
-  constructor({ name, password }) {
-    //обєкт параметра
-    this.name = name;
-    this.#password = password;
-    this.status = "base";
-  }
+// class User {
+//   #password;
+//   constructor({ name, password }) {
+//     //обєкт параметра
+//     this.name = name;
+//     this.#password = password;
+//     this.status = "base";
+//   }
 
-  //geter is used for work with privat values
-  get password() {
-    return this.#password;
-  }
+//   //geter is used for work with privat values
+//   get password() {
+//     return this.#password;
+//   }
 
-  set password(newPassword) {
-    if (newPassword === "") {
-      console.log("Пароль не може бути пустим");
-    }
-    this.#password = newPassword;
-    console.log("Пароль оновлено");
-  }
+//   set password(newPassword) {
+//     if (newPassword === "") {
+//       console.log("Пароль не може бути пустим");
+//     }
+//     this.#password = newPassword;
+//     console.log("Пароль оновлено");
+//   }
 
-  getStatusInfo() {
-    return `В даного користувача підписка рівня ${this.status}`;
-  }
-  updateStatus(newStatus) {
-    this.status = newStatus;
-    console.log(
-      `Рівень підписки користувача ${this.name} оновлено до ${this.status}`
-    );
-  }
-}
+//   getStatusInfo() {
+//     return `В даного користувача підписка рівня ${this.status}`;
+//   }
+//   updateStatus(newStatus) {
+//     this.status = newStatus;
+//     console.log(
+//       `Рівень підписки користувача ${this.name} оновлено до ${this.status}`
+//     );
+//   }
+// }
 
-const user_002 = new User({ name: "Diego", password: "12345678_" });
-const user_010 = new User({ name: "Marco", password: "87654321_" });
+// const user_002 = new User({ name: "Diego", password: "12345678_" });
+// const user_010 = new User({ name: "Marco", password: "87654321_" });
 // user_002.age = 22;
 // user_010.status = "pro"; //краще окремо ствоорити метод в класі
 
@@ -91,8 +91,8 @@ const user_010 = new User({ name: "Marco", password: "87654321_" });
 // user_002.updatePassword("222");
 // console.log(user_002);
 
-user_002.password = "555";
-console.log(user_002.password);
+// user_002.password = "555";
+// console.log(user_002.password);
 
 //geter спрацьовує коли ми звертаємося до самого password з приватних властивостей
 //seter спрацьовує коли ми змінюємо пароль з приватних властивостей
@@ -133,37 +133,37 @@ console.log(user_002.password);
 // console.log(rectangle1.getArea()); // 50
 
 //Статичні властивості - не передаються екземпляру
-class User1 {
-  static takenMails = [];
+// class User1 {
+//   static takenMails = [];
 
-  static Roles = {
-    ADMIN: "admin",
-    BASE_USER: "user",
-    EDITOR: "content-creator",
-  };
+//   static Roles = {
+//     ADMIN: "admin",
+//     BASE_USER: "user",
+//     EDITOR: "content-creator",
+//   };
 
-  static isTakenMail(email) {
-    return User1.takenMails.includes(email);
-  }
+//   static isTakenMail(email) {
+//     return User1.takenMails.includes(email);
+//   }
 
-  #email;
-  #role;
-  constructor({ email, role }) {
-    this.#email = email;
-    this.#role = role;
-    if (!User1.isTakenMail(email)) {
-      User1.takenMails.push(email);
-    }
-  }
-}
-const user_003 = new User1({
-  email: "email@gmail.com",
-  role: User1.Roles.ADMIN,
-});
-const user_004 = new User1({
-  email: "me@gmail.com",
-  role: User1.Roles.EDITOR,
-});
-console.log(user_003);
-console.log(user_004);
-console.log(User1.takenMails);
+//   #email;
+//   #role;
+//   constructor({ email, role }) {
+//     this.#email = email;
+//     this.#role = role;
+//     if (!User1.isTakenMail(email)) {
+//       User1.takenMails.push(email);
+//     }
+//   }
+// }
+// const user_003 = new User1({
+//   email: "email@gmail.com",
+//   role: User1.Roles.ADMIN,
+// });
+// const user_004 = new User1({
+//   email: "me@gmail.com",
+//   role: User1.Roles.EDITOR,
+// });
+// console.log(user_003);
+// console.log(user_004);
+// console.log(User1.takenMails);
