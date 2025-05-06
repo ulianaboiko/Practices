@@ -67,16 +67,16 @@
 // console.log(sumAction.dataset.action);
 
 //Практичні завдання 1-я
-const colorPickerOptions = [
-  { label: "red", color: "#F44336" },
-  { label: "green", color: "#4CAF50" },
-  { label: "blue", color: "#2196F3" },
-  { label: "grey", color: "#607D8B" },
-  { label: "pink", color: "#E91E63" },
-  { label: "indigo", color: "#3F51B5" },
-];
+// const colorPickerOptions = [
+//   { label: "red", color: "#F44336" },
+//   { label: "green", color: "#4CAF50" },
+//   { label: "blue", color: "#2196F3" },
+//   { label: "grey", color: "#607D8B" },
+//   { label: "pink", color: "#E91E63" },
+//   { label: "indigo", color: "#3F51B5" },
+// ];
 
-const colorPicker = document.querySelector(".js-color-picker");
+// const colorPicker = document.querySelector(".js-color-picker");
 
 // const colorPickers = [];
 // colorPickerOptions.forEach((option) => {
@@ -88,10 +88,10 @@ const colorPicker = document.querySelector(".js-color-picker");
 // });
 // colorPicker.append(...colorPickers);
 
-//2
-const colorPickerHtml = colorPickerOptions
-  .map(
-    (option) => `<a href="#" style="color: ${option.color}">${option.label}</a>`
-  )
-  .join(" ");
-colorPicker.innerHTML = colorPickerHtml;
+// //2
+// const colorPickerHtml = colorPickerOptions
+//   .map(
+//     (option) => `<a href="#" style="color: ${option.color}">${option.label}</a>`
+//   )
+//   .join(" ");
+// colorPicker.innerHTML = colorPickerHtml;
