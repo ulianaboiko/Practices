@@ -71,12 +71,12 @@
 // targetLink.style.fontSize = "2em";
 
 //5
-const allLinks = document.querySelectorAll("ul a");
-allLinks.forEach((link) => {
-  console.log(link.href);
+// const allLinks = document.querySelectorAll("ul a");
+// allLinks.forEach((link) => {
+//   console.log(link.href);
 
-  if (link.href.includes("://") && !link.href.includes("127.0.0")) {
-    link.style.color = "orange";
-  }
-});
-console.log(allLinks);
+//   if (link.href.includes("://") && !link.href.includes("127.0.0")) {
+//     link.style.color = "orange";
+//   }
+// });
+// console.log(allLinks);

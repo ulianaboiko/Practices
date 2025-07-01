@@ -13,17 +13,58 @@
         min-height: 400px;
         margin-top: 100px;
       }
+
+      /* .football__field {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: url("Group 141.png") no-repeat center center;
+        background-size: cover;
+        background-color: darkgreen;
+      }
+
+      #ball {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg");
+        background-size: cover;
+        transition: top 0.4s ease, left 0.4s ease;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+      } */
+
+      .football__field {
+        position: relative;
+        width: 720px;
+        height: 220px;
+        background-color: #5abb58;
+        border-radius: 37px;
+      }
+
+      .football__ball {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 85px;
+        left: 92px;
+        z-index: 2;
+        background-color: beige;
+        transition: top 0.7s ease, left 0.7s ease;
+      }
     </style>
   </head>
   <body>
-    <div class="element"></div>
+    <!-- <div class="element"></div>
 
-    <!-- 1 -->
-    <button class="js-clear">Очистити</button>
-    <p class="output js-output"></p>
+    1 -->
+    <!-- <button class="js-clear">Очистити</button>
+    <p class="output js-output"></p> -->
 
     <!-- 2 -->
-    <input type="text" id="input" />
+    <!-- <input type="text" id="input" />
     <p id="message"></p>
 
     <div id="box">
@@ -32,6 +73,14 @@
         doloremque soluta, voluptates dolore hic sapiente ipsam iusto a est
         possimus voluptas aperiam tenetur qui! Et officiis ab quod cum. Nulla?
       </p>
+    </div> -->
+
+    <!-- ----------------- -->
+    <h2 class="game__title">Футбол</h2>
+    <div class="football football__field" id="field">
+      <div class="football__ball" id="ball">
+        <!-- <img class="football__ball--img" alt="ball" src="" /> -->
+      </div>
     </div>
 
     <script type="module" src="./src/js/lesson-20.js"></script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dark-theme.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__text">
+          <a class="header__link" href="#">
+            <img
+              class="header__img"
+              src="./images/header-logo.svg"
+              alt="header-logo"
+          /></a>
+          <ul class="header__list">
+            <li class="header__list-item">
+              <div class="header__list-wrapper">
+                <a class="header__list-link" href="#">Інтерактив</a>
+                <button class="header__list-button"></button>
+              </div>
+              <ul class="header__filter" data-filter>
+                <li class="header__filter-item">
+                  <button class="header__filter-button">Числовий</button>
+                </li>
+                <li class="header__filter-item">
+                  <button class="header__filter-button">Ігровий</button>
+                </li>
+                <li class="header__filter-item">
+                  <button class="header__filter-button">Ознайомчий</button>
+                </li>
+              </ul>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Наша команда</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__lowertext">
+          <div class="swipper">
+            <input class="swipper__input" type="checkbox" data-theme-change />
+          </div>
+          <p class="header__user">
+            Вітаємо, <span class="header__text-user"></span>
+          </p>
+        </div>
+      </div>
+    </header>
+    <script type="module" src="./src/js/trying-dark-theme.js"></script>
+  </body>
+</html>

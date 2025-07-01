@@ -71,40 +71,88 @@
 
 //Практичні
 // 1
-const clearBtn = document.querySelector(".js-clear");
-const output = document.querySelector(".js-output");
+// const clearBtn = document.querySelector(".js-clear");
+// const output = document.querySelector(".js-output");
 
-const handleClear = () => (output.textContent = "");
+// const handleClear = () => (output.textContent = "");
 
-const handleOutput = (e) => {
-  if (e.key === "Backspace") return;
-  output.textContent += e.key;
-};
+// const handleOutput = (e) => {
+//   if (e.key === "Backspace") return;
+//   output.textContent += e.key;
+// };
 
-document.addEventListener("keydown", handleOutput);
-clearBtn.addEventListener("click", handleClear);
+// document.addEventListener("keydown", handleOutput);
+// clearBtn.addEventListener("click", handleClear);
 
-// 2
-const input = document.querySelector("#input");
-const message = document.querySelector("#message");
+// // 2
+// const input = document.querySelector("#input");
+// const message = document.querySelector("#message");
 
-const handleInputMessage = () => {
-  message.textContent = input.value;
-};
+// const handleInputMessage = () => {
+//   message.textContent = input.value;
+// };
 
-document.addEventListener("keydown", handleInputMessage);
+// document.addEventListener("keydown", handleInputMessage);
 
-//4
-const element = document.querySelector("#box");
+// //4
+// const element = document.querySelector("#box");
 
-const handleColorChange = (event) => {
-  console.log(event);
-  if (event.code === "KeyY") {
-    element.style.backgroundColor = "yellow";
-  }
-  if (event.code === "KeyG") {
-    element.style.backgroundColor = "green";
-  }
-};
+// const handleColorChange = (event) => {
+//   console.log(event);
+//   if (event.code === "KeyY") {
+//     element.style.backgroundColor = "yellow";
+//   }
+//   if (event.code === "KeyG") {
+//     element.style.backgroundColor = "green";
+//   }
+// };
 
-document.addEventListener("keydown", handleColorChange);
+// document.addEventListener("keydown", handleColorChange);
+// ----------------------------------------------------
+
+// const field = document.querySelector("#field");
+// const ball = document.querySelector("#ball");
+
+// const handleBall = (e) => {
+//   const ballSize = 50;
+
+//   let x = e.clientX - rect.left - ballSize / 2;
+//   let y = e.clientY - rect.top - ballSize / 2;
+
+//   // Обмеження по краях контейнера
+//   const maxX = rect.width - ballSize;
+//   const maxY = rect.height - ballSize;
+//   x = Math.max(0, Math.min(x, maxX));
+//   y = Math.max(0, Math.min(y, maxY));
+//   ball.style.left = `${x}px`;
+//   ball.style.top = `${y}px`;
+//   ball.style.transform = "translate(0, 0)";
+// };
+
+// field.addEventListener("click", handleBall);
+
+const field = document.getElementById("field");
+const ball = document.getElementById("ball");
+
+field.addEventListener("click", function (event) {
+  const fieldRect = field.getBoundingClientRect();
+
+  const ballSize = 50;
+  let newLeft = event.clientX - fieldRect.left - ballSize / 2;
+  let newTop = event.clientY - fieldRect.top - ballSize / 2;
+
+  // newLeft = Math.max(0, Math.min(newLeft, field.clientWidth - ballSize));
+  // newTop = Math.max(0, Math.min(newTop, field.clientHeight - ballSize));
+
+  ball.style.left = `${newLeft}px`;
+  ball.style.top = `${newTop}px`;
+
+  //   event.preventDefault();
+  //   let x = event.clientX;
+  //   let y = event.clientY;
+  //   console.log("clientX:", x);
+  //   console.log("clientY:", y);
+
+  //   ball.style.left = `${x}px`;
+  //   ball.style.top = `${y}px`;
+});
