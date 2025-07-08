@@ -18,28 +18,44 @@
 // };
 // targetElement.addEventListener("click", handleClick);
 
-//1
-const palette = document.querySelector(".color-palette");
+// //1
+// const palette = document.querySelector(".color-palette");
 
-const handleColorPick = (event) => {
-  if (event.target.tagName === "BUTTON") {
-    const target = event.target;
-    const color = target.dataset.color;
-    event.currentTarget.style.backgroundColor = color;
-    target.style.color = color;
-  }
+// const handleColorPick = (event) => {
+//   if (event.target.tagName === "BUTTON") {
+//     const target = event.target;
+//     const color = target.dataset.color;
+//     event.currentTarget.style.backgroundColor = color;
+//     target.style.color = color;
+//   }
+// };
+
+// palette.addEventListener("click", handleColorPick);
+
+// //2
+// const userList = document.querySelector("#userList");
+
+// const handleDelete = (event) => {
+//   if (event.target.classList.contains("deleteButton")) {
+//     const item = event.target.closest("li");
+//     item.remove();
+//   }
+// };
+
+// userList.addEventListener("click", handleDelete);
+
+//ПРОДОВЖЕННЯ ЗАНЯТТЯ
+
+const toggle = document.querySelector("#toggle");
+const menu = document.querySelector("#menu");
+
+const handleToggle = (event) => {
+  event.stopPropagation();
+  menu.hidden = !menu.hidden;
 };
 
-palette.addEventListener("click", handleColorPick);
+toggle.addEventListener("click", handleToggle);
 
-//2
-const userList = document.querySelector("#userList");
-
-const handleDelete = (event) => {
-  if (event.target.classList.contains("deleteButton")) {
-    const item = event.target.closest("li");
-    item.remove();
-  }
-};
-
-userList.addEventListener("click", handleDelete);
+document.addEventListener("click", () => {
+  menu.hidden = true;
+});
