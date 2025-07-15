@@ -38,13 +38,13 @@
 
 //3
 
-const box = document.querySelector(".box");
+// const box = document.querySelector(".box");
 
-const handleBox = (event) => {
-  const x = event.screenX;
-  const y = event.screenY;
-  console.log(`X=${x} Y=${y}`);
-};
-const debouncedHandleBox = _.debounce(handleBox, 500);
+// const handleBox = (event) => {
+//   const x = event.screenX;
+//   const y = event.screenY;
+//   console.log(`X=${x} Y=${y}`);
+// };
+// const debouncedHandleBox = _.debounce(handleBox, 500);
 
-box.addEventListener("mousemove", debouncedHandleBox);
+// document.addEventListener("mousemove", debouncedHandleBox);
