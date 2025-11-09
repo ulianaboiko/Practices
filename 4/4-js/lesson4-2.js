@@ -26,7 +26,7 @@
 // const throttleHandleInputText = _.throttle(handleInputText, 2000);
 // input.addEventListener("input", throttleHandleInputText);
 
-//2
+// 2
 // const input2 = document.querySelector(".input");
 // const text2 = document.querySelector(".text");
 
